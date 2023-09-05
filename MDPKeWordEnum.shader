@@ -6,12 +6,16 @@ Shader "Custom/MDPKeWordEnum"
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
+        [Space(5)]
+        [Header(Group1)]
         // keywordEnum
         [KeywordEnum(Off,Red,Blue)]
         _Options("Color Options",Float) = 0
         // Enum
         [Enum(none,0,Front,1,Back,2)]
         _Face("Face Culling",Float) = 0
+        [Space(5)]
+        [Header(Group2)]
         // PowerSlider
         [PowerSlider(3.)]
         _Boost ("Boost",Range(0.01,1)) = 0.04
