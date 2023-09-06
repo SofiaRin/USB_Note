@@ -10,10 +10,10 @@ Shader "Custom/MDPKeWordEnum"
         [Header(Group1)]
         // keywordEnum
         [KeywordEnum(Off,Red,Blue)]
-        _Options("Color Options",Float) = 0
+        _Options("Color Options",Integer) = 0
         // Enum
         [Enum(none,0,Front,1,Back,2)]
-        _Face("Face Culling",Float) = 0
+        _Face("Face Culling",Integer) = 0
         [Space(5)]
         [Header(Group2)]
         // PowerSlider
